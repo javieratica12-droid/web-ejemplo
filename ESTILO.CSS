@@ -1,0 +1,50 @@
+header{
+    display: flex;
+    color: white;
+    align-items: center;
+    background-color: chocolate;
+    font-size: 15px;
+    
+   
+}
+.ENT{background-color: red;}
+.DIAS{background-color: aquamarine;}
+.LEN{background-color:palegoldenrod ;}
+.DIG{background-color:yellowgreen;}
+.PRO{background-color:darkseagreen;}
+.SIS{background-color: coral;}
+.SOS{background-color: cyan;}
+.ING{background-color: cornflowerblue;}
+.BAS{background-color: darkgray;}
+.ITI{background-color: deeppink;}
+.PROG{background-color: darkred;}
+.BOTON{color: coral;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+}
+.enlace{color: white;
+        align-items: center;
+        padding: 15px;
+}
+.info {
+    font: 20px bold;
+    background-color: green;
+}
+
+Footer{
+    background:chartreuse ;
+    color: aliceblue;
+    padding:10px 15px ;
+    align-items: center;
+}
+
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid;color:#ddd;
+    padding: 8px;
+}
+
