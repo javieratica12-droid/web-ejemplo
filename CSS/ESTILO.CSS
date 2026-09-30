@@ -47,4 +47,17 @@ td, th{
     border: 1px solid;color:#ddd;
     padding: 8px;
 }
+.encabezado{color:red;
+font-family:italic;
+}
+.verdana{font-family:verdana;
 
+}
+.tamaño{font-size:30px;
+}
+.imagen{width: 100px;
+    margin: auto;
+    justify-content: center;
+    display:flex;
+    
+}
