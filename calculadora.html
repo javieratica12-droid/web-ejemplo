@@ -1,0 +1,55 @@
+<head>
+    <script  src="JS/calculadora.js"></script>
+    <META CHARSET="utf-8">
+	<title>Formulario</title>
+		<link rel="stylesheet" href="CSS/ESTILO.CSS">   
+</head>
+<header>
+            <h2>Menu:</h2>
+            <nav>
+                <a class="enlace" href="index.html">index</a>
+                <a class="enlace" href="horario.html">horario</a>
+                <a class="enlace" href="Formulario.html">Formulario</a>
+                <a class="enlace" href="Ejercicio1.html">Ejercicio1</a>
+                <a class="enlace" href="Ejemplo3.html">Ejemplo3</a>
+                <a class="enlace" href="Ejercicio2.html">Ejercicio2</a>
+            </nav>
+        </header>
+<body>
+<table>
+    <thead>
+            <td colspan="4">
+                <input type="text" id="pantalla" readonly>
+            </td>
+    </thead>
+    <tbody>
+            <tr>
+                <td><button onclick="escribir('7')">7</button></td>
+                 <td><button onclick="escribir('8')">8</button></td>
+                  <td><button onclick="escribir('9')">9</button></td>
+                   <td><button onclick="escribir('/')">/</button></td>
+            </tr>
+            <tr>
+             <td><button onclick="escribir('4')">4</button></td>
+              <td><button onclick="escribir('5')">5</button></td>
+               <td><button onclick="escribir('6')">6</button></td>
+                <td><button onclick="escribir('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="escribir('1')">1</button></td>
+                    <td><button onclick="escribir('2')">2</button></td>
+                    <td><button onclick="escribir('3')">3</button></td>
+                    <td><button onclick="escribir('−')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="escribir('0')">0</button></td>
+                    <td><button onclick="escribir('.')">.</button></td>
+                    <td><button onclick="resolver('=')">=</button></td>
+                    <td><button onclick="escribir('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><button onclick="borrar()">C</button></td>
+                </tr>
+    </tbody>
+</table>
+</body>
