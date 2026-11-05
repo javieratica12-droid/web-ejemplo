@@ -1,263 +1,296 @@
-header{
+/* --- 1. Selector Universal y de Etiquetas Básicas --- */
+* {
+    box-sizing: border-box; /* Modelo de cajas */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fuentes seguras del temario */
+    background-color: #f4f4f9;
+    color: #333333;
+    line-height: 1.5;
+}
+
+/* --- 2. Estilos para el Encabezado y Menú --- */
+header {
     display: flex;
-    color: white;
     align-items: center;
     background-color: chocolate;
-    font-size: 15px;
-    
-   
-}
-.ENT{background-color: red;}
-.DIAS{background-color: aquamarine;}
-.LEN{background-color:palegoldenrod ;}
-.DIG{background-color:yellowgreen;}
-.PRO{background-color:darkseagreen;}
-.SIS{background-color: coral;}
-.SOS{background-color: cyan;}
-.ING{background-color: cornflowerblue;}
-.BAS{background-color: darkgray;}
-.ITI{background-color: deeppink;}
-.PROG{background-color: darkred;}
-.BOTON{color: coral;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        
-}
-.enlace{color: white;
-        align-items: center;
-        padding: 15px;
-}
-.info {
-    font: 20px bold;
-    background-color: green;
+    color: white;
+    padding: 10px 20px;
 }
 
-Footer{
-    background:chartreuse ;
+header h2 {
+    font-size: 1.1rem;
+    margin-right: 20px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.enlace {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+/* Pseudoclase :hover para los enlaces del menú */
+.enlace:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --- 3. Estilos para el Pie de Página --- */
+footer {
+    background-color: chartreuse;
     color: aliceblue;
-    padding:10px 15px ;
-    align-items: center;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
 }
 
-table{
-    width:100%;
-    border-collapse: collapse;
+/* --- 4. Tablas y Horario --- */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Bordes fusionados (Tema 3) */
+    margin: 20px 0;
+    background-color: white;
 }
 
-td, th{
-    border: 1px solid;color:#ddd;
+td, th {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #e2e2e2;
+    font-weight: bold;
+}
+
+/* Colores para las asignaturas del horario (Notación por nombre) */
+.ENT { background-color: red; color: white; }
+.DIAS { background-color: aquamarine; }
+.LEN { background-color: palegoldenrod; }
+.DIG { background-color: yellowgreen; }
+.PRO, .PROG { background-color: darkseagreen; color: white; }
+.SIS { background-color: coral; color: white; }
+.SOS { background-color: cyan; }
+.ING { background-color: cornflowerblue; color: white; }
+.BAS { background-color: darkgray; }
+.ITI { background-color: deeppink; color: white; }
+
+/* --- 5. Formularios y Botones --- */
+button, input[type="submit"], input[type="reset"] {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="text"], input[type="password"], input[type="number"], select {
     padding: 8px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
 }
-.encabezado{color:red;
-font-family:italic;
-}
-.verdana{font-family:verdana;
 
+fieldset {
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
 }
-.tamaño{font-size:30px;
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
 }
-.imagen{width: 100px;
+
+/* --- 6. Clases de Apoyo y Ejercicios --- */
+.encabezado {
+    color: red;
+    font-style: italic;
+}
+
+.verdana {
+    font-family: verdana, sans-serif;
+}
+
+.tamaño {
+    font-size: 30px;
+}
+
+.imagen {
+    width: 100px;
     margin: auto;
-    justify-content: center;
-    display:flex;
-    
+    display: block;
 }
 
-.bloque{display:block;
+.bloque {
+    display: block;
     border: 1px solid blue;
     background-color: grey;
     padding: 20px;
-
-}
-button{
-    background-color: rgb(172, 172, 2);
-    border: 1px solid yellow;
     color: white;
-    padding: 10px;
 }
 
-pre{
-    font-family: verdana;
+pre {
+    font-family: verdana, sans-serif;
     font-size: 10px;
 }
 
-.ejemplo2{
+.ejemplo2 {
     background-color: darkblue;
     color: white;
     text-align: center;
     font-size: 20px;
 }
 
-
-  
-
-
-.flor{
-      background-image: url("../imagenes/flor.png");
-     background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
+.flor {
+    background-image: url("../imagenes/flor.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.prueba2{
-    background-color:#e0e0e0 ;
-    
+/* Tablas de prácticas */
+.prueba2 {
+    background-color: #e0e0e0;
     border-spacing: 10px;
     width: 100%;
 }
-.verde{
+
+.verde {
     background-color: greenyellow;
     text-align: center;
     color: black;
     border: 4px solid yellow;
 }
 
-.gris{
+.gris {
     background-color: rgb(194, 194, 194);
     text-align: center;
     color: black;
     border: 4px solid yellow;
 }
-.titulo{
+
+.titulo {
     background-color: rgb(194, 194, 194);
     color: black;
     border: 4px solid yellow;
-   
 }
-.prueba1{
-    border:2px solid blue;
+
+.prueba1 {
+    border: 2px solid blue;
     padding: 10px;
     border-collapse: separate;
 }
 
-.pth{
+.pth {
     border: none;
     color: black;
     padding: 10px;
     text-align: center;
-    border-collapse: separate;
 }
-.ptd{
+
+.ptd {
     color: black;
     border: 2px solid navy;
-    border-collapse: separate;
 }
-.tabla1{
-    font-family: 'Times New Roman', Times, serif;
-    font-style:italic;
-    text-align: center;
-    font-size: 15px;
-}
-.tabla2{
+
+.tabla1, .tabla2 {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     text-align: center;
     font-size: 15px;
 }
 
-.cuadrados{
+/* Listas */
+.cuadrados {
     list-style-type: square;
     list-style-position: inside;
-    
 }
-.listas{
+
+.listas {
     background-color: rgb(7, 218, 233);
     text-align: center;
-    font-style:italic ;
+    font-style: italic;
 }
 
-.vacios{
-    list-style: circle;
+.vacios {
+    list-style-type: circle;
 }
 
-.letras{
-    list-style:lower-latin ;
+.letras {
+    list-style-type: lower-latin;
     list-style-position: inside;
 }
 
-.romanos{
-    list-style:lower-roman ;
+.romanos {
+    list-style-type: lower-roman;
     list-style-position: inside;
 }
-.pulsado{
+
+.pulsado {
     background-color: red;
+    font-weight: bold;
 }
-.menu-horizontal{
-    list-style-type:none;
+
+/* Menús horizontal y vertical */
+.menu-horizontal {
+    list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: burlywood;
     overflow: hidden;
-
 }
 
 .menu-horizontal li {
     float: left;
 }
-.menu-horizontal  li a{
+
+.menu-horizontal li a {
     display: block;
     color: white;
     padding: 12px 20px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-.menu-vertical{
+.menu-vertical {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 160px;
 }
+
 .menu-vertical li a {
     display: block;
     background-color: greenyellow;
     padding: 12px 15px;
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
+    text-decoration: none;
 }
-.menu-vertical li a.pulsado{
-    background-color: red;
-    font-weight: bold;
-}
-.marco{
+
+.marco {
     border: 2px solid blue;
     padding: 15px;
-    margin:20px;
+    margin: 20px;
 }
 
-.gris{
-    background-color:rgb(163, 178, 180) ;
-    color: white;
-    padding: 20px;
-    margin-bottom:15px;
-    text-align: left;
-}
-
-.gris h2 {
-    margin-top: 0;
-    font-family: serif;
-    text-align: left;
-}
-.gris p{
-    font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 15px;
-   
-}
-.amarilla{
+.amarilla {
     background-color: rgba(219, 201, 176, 0.856);
     color: #333333;
     padding: 15px;
     font-style: italic;
 }
 
-.rosa{
-    background-color:rgb(235, 111, 204) ;
+.rosa {
+    background-color: rgb(235, 111, 204);
     color: white;
-    padding: 2px 4px;
-}
-
-.verde{
-    background-color:#557a55 ;
-    color: white;
-    font-weight: bold;
-    border: 1px solid #333;
     padding: 2px 4px;
 }
