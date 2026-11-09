@@ -76,7 +76,7 @@ var stock = 10;
 
 // Escribe tu código aquí.
 console.log("Producto: " + nombreProducto);
-console.log("Precio: " + precio);
+console.log("Precio: " + precio + "Euros"   );
 console.log("Stock: " + stock);
 
 // =======================================================
@@ -91,7 +91,7 @@ console.log("\n===== NUESTROS PRODUCTOS =====");
 
 // Escribe tu código aquí.
 
-var productos=["Ratón","Teclado","Monitor","Altavoces","Cámara"];
+let productos=["Ratón","Teclado","Monitor","Altavoces","Cámara"];
 console.log(productos);
 
 // TAREA 5.
@@ -129,6 +129,7 @@ arrayLength=productos.push("Auriculares");
 // Escribe tu código aquí.
 arrayIncludes=productos.includes("Teclado");
 console.log("El array contiene el producto Teclado? " + arrayIncludes);
+console.log(productos.includes("Móvil"));
 
 // TAREA 8.
 // Muestra el nombre de un producto en mayúsculas
@@ -138,7 +139,7 @@ console.log("El array contiene el producto Teclado? " + arrayIncludes);
 // mediante su posición. La primera posición es 0.
 
 // Escribe tu código aquí.
-
+console.log
 
 
 // =======================================================
