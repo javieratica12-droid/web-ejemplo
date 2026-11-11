@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<HTML lang="es">
+<head>
+	<META CHARSET="utf-8">
+	<title>Juego de piedra,papel o tijeras</title>
+		<script src="/JS/juego.js"></script>
+</head>
+	<body>
+		<header>
+            <h2>Menu:</h2>
+            <nav>
+                <a class="enlace" href="index.html">index</a>
+                <a class="enlace" href="horario.html">horario</a>
+                <a class="enlace" href="Formulario.html">Formulario</a>
+				<a class="enlace" href="Ejercicio1.html">Ejercicio1</a>
+				  <a class="enlace" href="Ejemplo3.html">Ejemplo3</a>
+				  <a class="enlace" href="Ejercicio2.html">Ejercicio2</a>
+				  <a class="enlace" href="Ejemplo2b.html">Ejemplo2b</a>
+				  <a class="enlace" href="Ejemplo2c.html">Ejemplo2c</a>
+            </nav>
+        </header>
+        
+        <div>
+            <h2>Juego de piedra,papel o tijeras</h2>
+        <div id="juego"></div>
+        <p>Elige tu jugada:</p>
+        <button onclick="juego ('piedra')">Piedra</button>
+        <button onclick="juego ('papel')">Papel</button>
+        <button onclick="juego ('tijera')">Tijera</button>
+        </div>
+        <p id="marcador">Partidas jugadas: 0</p>
+        <p id="ganadas">Ganadas: 0</p>
+        <p id="perdidas">Perdidas: 0</p>
+        <p id="empates">Empates: 0</p>
+
+        <section id="resultado">
+            <p id="jugada-jugador">Tu jugada aparecerá aquí</p>
+            <p id="jugada-máquina">La jugada de la máquina aparecerá aquí</p>
+            <p id="mensaje"></p>
+        </section>
+    </body>
+</HTML>
+        
